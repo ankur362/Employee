@@ -19,6 +19,8 @@ public class Employer {
     private String name;
     private String industry;
     private String location;
+    private String companyName;
+    private String email;
 
     @OneToMany(mappedBy = "employer", cascade = CascadeType.ALL, orphanRemoval = true)
     private Set<Employee> employees;
